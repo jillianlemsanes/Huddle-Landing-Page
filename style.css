@@ -1,1 +1,346 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*font-family: 'Poppins', sans-serif;*/
+
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1.5rem 0 1.5rem;
+}
+
+.logo{
+    width: 40%;
+    max-width: 200px;
+}
+
+.nav-btn{
+    font-size: 1rem;
+    text-decoration: none;
+    color: hsl(322, 100%, 66%);
+    border: 1px hsl(322, 100%, 66%) solid;
+    border-radius: 1000px;
+    padding: .25rem 1rem;
+}
+
+.h1-style{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: hsl(192, 100%, 9%);
+    padding-top: 10rem;
+}
+
+.h2-style{
+    color: hsl(192, 100%, 9%);
+    font-family: 'Poppins', sans-serif;
+}
+
+.h3-style{
+    font-size: 3.5rem;
+    padding: 0;
+    margin: 0;
+    color: hsl(192, 100%, 9%);
+}
+
+.hero-p{
+    text-align: center;
+    color: hsl(192, 100%, 9%);
+    margin-bottom: 3rem;
+}
+
+.p-style{
+    color: hsl(192, 100%, 9%);
+    font-size: .80rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.p-spacing{
+    padding-bottom: 7rem;
+}
+
+.span-txt{
+    color: gray;
+    font-family: 'Poppins', sans-serif;
+    font-size: .80rem;
+    font-weight: 500;
+}
+
+.btn-container{
+    width: 50%;
+    max-width: 200px;
+    margin: 0 auto;
+    padding: .75rem 1.5rem;
+    font-size: .75rem;
+    text-align: center;
+    background: hsl(322, 100%, 66%);
+    border-radius: 1000px;
+    box-shadow: 0px 1.5px lightgray;
+}
+
+.cta-btn{
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.hero-img{
+    width: 100%;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+}
+
+.column-left, .column-right{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 5rem;
+}
+
+.img-container{
+    width: 43%;
+    text-align: right;
+}
+
+.backgrnd-img{
+    background-image: url(/images/bg-section-top-mobile-1.svg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: contain;
+    width: 100%;
+}
+
+.bckgrnd-color{
+    background: hsl(207, 100%, 98%);
+}
+
+.backgrnd-img2{
+    background-image: url(/images/bg-section-bottom-mobile-1.svg), url(/images/bg-section-top-mobile-2.svg);
+    background-repeat: no-repeat;
+    background-position: top center, bottom center;
+    background-size: contain;
+    width: 100%;
+}
+
+.backgrnd-img3{
+    background-image: url(/images/bg-section-bottom-mobile-2.svg), url(/images/bg-footer-top-mobile.svg);
+    background-position: top center, bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+}
+
+.flex-container, .flex-container2{
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.flex-img{
+    width: 100%;
+    padding: 4rem 0;
+}
+
+.img-spacing{
+    padding-top: 0;
+}
+
+.container-community{
+    padding: 10rem 0 15rem 0;
+    text-align: center;
+}
+
+.background-footer{
+    background: hsl(192, 100%, 9%);
+    padding-bottom: 2rem;
+}
+
+.column-right-footer, .column-left-footer{
+    color: white;
+    align-items: left;
+    padding-top: 3rem;
+}
+
+.h5-style{
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+.p-footer{
+    font-size: .80rem;
+    line-height: 1.5rem;
+    padding: 0 0 1rem 0;
+}
+
+.input-field{
+    margin-bottom: 1rem;
+    padding: .75rem;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+}
+
+.subscribe-btn-align{
+    text-align: right;
+}
+
+.subscribe-btn{
+    padding: .75rem 2rem;
+    background-color: hsl(322, 100%, 66%);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.logo-footer{
+    width: 50%;
+    max-width: 200px;
+    padding-top: 3rem;
+}
+
+.contact-info{
+    padding: 1rem 0 1rem 0;
+}
+
+.span-footer{
+    padding-left: 1rem;
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin: 2rem 0;
+}
+
+.attribution{
+    font-size: .75rem;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin-left: 1rem;
+}
+
+.attribution a{
+    text-decoration: none;
+    color: hsl(322, 100%, 66%);
+}
+
+@media(max-width: 420px){
+    .btn-container{
+        padding: .60rem .70rem;
+        font-size: .75rem;
+    }
+}
+
+
+/*for tablet size designs */
+
+@media (min-width: 700px){
+    .backgrnd-img{
+        background-image: url(/images/bg-section-top-desktop-1.svg);
+    }
+
+    .backgrnd-img2{
+        background-image: url(/images/bg-section-bottom-desktop-1.svg), url(/images/bg-section-top-desktop-2.svg);
+    }
+
+    .backgrnd-img3{
+        background-image: url(/images/bg-section-bottom-desktop-2.svg), url(/images/bg-footer-top-desktop.svg);
+    }
+
+    .flex-container, .flex-container2{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .flex-container{
+        flex-direction: row-reverse;
+        padding: 0;
+    }
+
+    .flex-container2{
+        padding: 10rem 0;
+    }
+
+    .hero-img{
+        margin-bottom: 0;
+    }
+
+    .column-left, .column-right{
+        padding: 5rem 0;
+    }
+
+    .flex-img, .flex-txt{
+        width: 45%;
+    }
+   
+    .flex-img{
+        padding: 0;
+    }
+
+    .flex-txt{
+        justify-self: center;
+        align-self: center;
+        padding: 0;
+    }
+
+    .p-spacing{
+        padding: 0;
+    }
+
+    .flex-container-footer{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    .column-left-footer, .column-right-footer{
+        padding: 0;
+        width: 40%;
+    }
+
+    .logo-footer{
+        padding: 0;
+    }
+    
+    .attribution{
+        text-align: center;
+    }
+}
+
+/*For designs 1200px or more*/
+
+@media(min-width: 1200px){
+    .column-left, .column-right{
+        padding-bottom: 10rem;
+    }
+
+    .flex-container2{
+        padding: 18rem 0;
+    }
+
+    .container-community{
+        padding: 18rem 0;
+    }
+
+    .flex-container-footer{
+        padding: 7rem 0;
+    }
+}
 

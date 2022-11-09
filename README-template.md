@@ -14,11 +14,10 @@ This is a solution to the [Huddle landing page with curved sections challenge on
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
+
+This project was completed to test my CSS skills. All of the coding is my work but the designs and project idea came from Frontend Mentor. This project uses HTML and CSS only. 
 
 ### The challenge
 
@@ -29,83 +28,62 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+-Mobile View Screenshot
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+/images/mobile-screenshot.png
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+-Desktop View Screenshot 
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
+/images/desktop-screenshot.png
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
 ## My process
 
+- I viewed the desktop and mobile designs to get an idea of what HTML markup I need to layout. 
+
+- I did some research on a few things I knew I would need to use in this project but was not comfortable with (row-reverse, these type of background images)
+
+
+ - I started with a desktop first HTML markup. I completed the project this way so that the complicated desktop designs would be laid out in HTML first. You want to account for the more complex layouts of the desktop view with HTMl.
+ 
+ - Since mobile first is the easier layout and design, I styled my CSS with mobile first. I chose to do mobile first CSS because once I get to desktop, there was much less I had to style with CSS. Styling simple designs to the more complex works best with CSS.
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- Font Awesome Icons
+- Google Fonts
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+1. SVG images can be styled. This was a completely new thing to me. I ran into this when I was needing to insert an all-white version of the "Huddle logo" into the footer section. I styled the SVG inside the actual svg file, however I believe you can also style in in the CSS style page. I simply created a copy of the Huddle logo, re-named it to "logo-footer" and styled away. 
 
-To see how you can add code snippets, see below:
+2. I was under the impression that the wavy background images were one giant background image. I was thinking the whole thing was just one background image that you insert behind the section you need it and you are good to go. Definitely did not work like that, as I quickly realized that the background images were literally just the edges of the curvy background. 
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+    -I ended up putting the top and bottom edge of the curvy backgrounds onto the various "backgrnd-img 1, 2, or 3" classes. These typically fell into the container ABOVE  or BELOW where the background was supposed to be, and then I would use a "bckgrnd-color" class to change the desired container background. In sum, I had to use to seperate sections to achieve the look needed for one section. Had no idea this project was going to use so much styling to get those background images to look correct. 
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+3. You can set multiple background images to one container, and how to move their positions. I learned a lot of CSS styling with background images froom this project. 
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+1. I would like to learn more about styling SVG images, and how to style the SVGs in the CSS style sheets instead of in the SVG file.
+2. I want to practice using custom CSS, as I have seen it several times but have never used it myself. 
+3. I want to keep working on my semantic HTML. I felt more comfortable with it in this project but I still have a lot to learn about it.
+4. Next, I will try a project with CSS grid. I learned about grid but I've never used it in a project and I think it will be extremely helpful to know and level up my CSS skills even more. 
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Font Awesome](https://fontawesome.com/)- I used this to obtain the social media logos, there are a lot of sites you can use but I used this one for my project. 
+- [CSS Tricks Flex Direction](https://css-tricks.com/almanac/properties/f/flex-direction/) - Some of the sections in the design between mobile and desktop were switching the order of the image and text. I used this resource to figure out how to get the look I needed using flex-direction: row-reverse. 
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@jillianlemsanes](https://www.frontendmentor.io/profile/jillianlemsanes)
+- GitHub - [@jillianlemsanes](https://github.com/jillianlemsanes)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**

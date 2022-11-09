@@ -9,6 +9,17 @@
 
   <title>Frontend Mentor | Huddle landing page with curved sections</title>
 
+  <script src="https://kit.fontawesome.com/1090f16645.js" crossorigin="anonymous"></script>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
   <nav class="nav">
@@ -25,97 +36,104 @@
     <img class="hero-img" src="/images/screen-mockups.svg" alt="Desktop and Mobile Screens">
   </section>
 
-  <section class="container">
-    <div class="flex-container">
+  <section class="backgrnd-img">
+    <div class=" container flex-container">
       <div class="column-left">
-        <img class="communities" src="/images/icon-communities.svg" alt="People Icon">
+        <div class="img-container">
+          <img class="tiny-imgdesign" src="/images/icon-communities.svg" alt="People Icon">
+        </div>
         <h3 class="h3-style">1.4k+</h3>
         <span class="span-txt">Communities Formed</span>
       </div>
-
+      
       <div class="column-right">
-        <img class="messages" src="/images/icon-messages.svg" alt="Message Icon">
+        <div class="img-container">
+          <img class="tiny-imgdesign" src="/images/icon-messages.svg" alt="Message Icon">
+        </div>
         <h3 class="h3-style"> 2.7m+</h3>
         <span class="span-txt">Messages Sent</span>
       </div>
     </div>
   </section>
 
-  <section class="backgrnd-img container">
-    <div class="flex-container">
+  <section class="bckgrnd-color">
+    <div class="container flex-container">
+      <img class="flex-img" src="/images/illustration-grow-together.svg" alt="messages and people">
       <div class="flex-txt">
         <h2 class="h2-style">Grow Together</h2>
         <p class="p-style">Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.</p>
       </div>
-      <img class="flex-img" src="/images/illustration-grow-together.svg" alt="messages and people">
     </div>
   </section>
 
-  <section class="container">
-    <div class="flex-container">
+  <section class="backgrnd-img2">
+    <div class="container flex-container2">
       <img class="flex-img" src="/images/illustration-flowing-conversation.svg" alt="people conversting at table">
       <div class="flex-txt">
         <h2 class="h2-style">Flowing Conversations</h2>
-        <p class="p-style">You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.</p>
+        <p class="p-style p-spacing">You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.</p>
       </div>
     </div>
   </section>
 
-  <section class="backgrnd-img2 container">
-    <div class="flex-container">
+  <section class="bckgrnd-color">
+    <div class="container flex-container">
+      <img class="flex-img img-spacing" src="/images/illustration-your-users.svg" alt="people holding messages icon">
       <div class="flex-txt">
         <h2 class="h2-style">Your Users</h2>
         <p class="p-style">It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.</p>
       </div>
-      <img class="flex-img" src="/images/illustration-your-users.svg" alt="people holding messages icon">
     </div>
   </section>
 
-  <section class="container">
-    <h2 class="h2-style">Ready To Build Your Community?</h2>
-    <div class="btn-design">
-      <a href="#">Get Started For Free</a>
+  <section class="backgrnd-img3">
+    <div class="container container-community">
+      <h2 class="h2-style">Ready To Build Your Community?</h2>
+      <div class="btn-container">
+        <a class="cta-btn" href="#">Get Started For Free</a>
+      </div>
     </div>
   </section>
 
 
-  <footer class="bckgrnd-footer container">
-    <div class="flex-container">
-      <div class="column-left-footer">
-        <img class="logo-footer" src="/images/logo.svg" alt="logo image">
-        <p class="p-style">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta optio dicta molestias est! Enim ducimus perferendis earum explicabo.</p>
-        <div class="phone">
-          <img class="phone-icon" src="/images/icon-phone.svg" alt="telephone">
-          <p class="phone-txt">Phone: +1-543-123-4567</p>
+  <footer class="background-footer">
+    <div class="container flex-container-footer">
+      <div class="column-right-footer">
+        <h5 class="h5-style">Newsletter</h5>
+        <p class="p-footer">To recieve tips on how to grow your community, sign up to our weekly newletter. We'll never send you spam or pass on your email address</p>
+        <div class="email-subscribe">
+          <form action="#">
+            <input class="input-field" type="text" name="EmailAddress">
+            <div class="subscribe-btn-align">
+              <button class="subscribe-btn" type="submit">Subscribe</button>
+            </div>
+          </form>
         </div>
-        <div class="email">
+      </div>
+      <div class="column-left-footer">
+        <img class="logo-footer" src="/images/logo-footer.svg" alt="logo image">
+        <p class="p-footer">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta optio dicta molestias est! Enim ducimus perferendis earum explicabo.</p>
+        <div class="contact-info">
+          <img class="phone-icon" src="/images/icon-phone.svg" alt="telephone">
+          <span class="span-footer">Phone: +1-543-123-4567</span>
+        </div>
+        <div class="contact-info">
           <img class="email-icon" src="/images/icon-email.svg" alt="email icon">
-          <p class="email-txt">example@huddle.com</p>
+          <span class="span-footer">example@huddle.com</span>
         </div>
 
         <div class="social-media">
-          <img class="col-img" src="/images/icon-facebook.svg" alt="facebook icon">
-          <img class="col-img" src="/images/icon-instagram.svg" alt="instagram logo">
-          <img class="col-img" src="/images/icon-twitter.svg" alt="twitter icon">
-        </div>
-
-        <div class="column-right-footer">
-          <h5 class="h5-style">Newsletter</h5>
-          <p class="p-style">To recieve tips on how to grow your community, sign up to our weekly newletter. We'll never send you spam or pass on your email address</p>
-          <div class="email-subscribe">
-            <form action="#">
-              <input type="text" name="EmailAddress">
-              <button class="subscribe-btn" type="submit">Subscribe</button>
-            </form>
-          </div>
+          <i class="fa-brands fa-square-facebook fa-2x"></i>
+          <i class="fa-brands fa-instagram fa-2x"></i>
+          <i class="fa-brands fa-square-twitter fa-2x"></i>
         </div>
       </div>
 
 
     </div>
     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Challenge by  <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/jillianlemsanes">Jillian Lemsanes</a>.
     </p>
   </footer>
 </body>
